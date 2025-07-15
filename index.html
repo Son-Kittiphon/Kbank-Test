@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- meata data -->
+  <meta
+      name="description"
+      content="Test Skill Front-End Kittiphon Pimsandook"
+  />
+  <meta />
+  <meta
+      name="keywords"
+      content="test skill, kbank"
+  />
+  <link rel="icon" type="image/x-icon" href="./Assets/favicon.ico" />
+  <title>KBank Test | Kittiphon Pimsandook (Tonson)</title>
+
+  <!-- css link -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- lib link -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+<body>
+  <!-- Start banner section -->
+  <div class="banner">
+    <!-- navbar section -->
+    <nav>
+      <div class="container">
+        <div class="wrapper_navbar">
+          <!-- navbar content left -->
+          <div class="navbar_left">
+            <img src="Assets/kbank_logo.svg" alt="KBank Logo" class="kbank_logo">
+            <ul>
+              <li>
+                <img src="Assets/personal_icon.svg" alt="Personal Icon">
+                <span>ลูกค้าบุคคล</span>
+              </li>
+              <li>
+                <img src="Assets/business_icon.svg" alt="Business Icon">
+                <span>ลูกค้าธุรกิจ</span>
+              </li>
+              <li>
+                <img src="Assets/wealth_icon.svg" alt="Wealth Icon">
+                <span>ลูกค้า Wealth</span>
+              </li>
+            </ul>
+          </div>
+          <!-- navbar content right -->
+          <div class="navbar_right">
+            <img src="Assets/kbank_icon.svg" alt="KBank Icon" class="kbank_icon">
+            <ul>
+              <li>
+                <span>นักลงทุนสัมพันธ์</span>
+              </li>
+              <li>
+                <span>เกี่ยวกับเรา</span>
+              </li>
+              <li>
+                <img src="Assets/search_icon.svg" alt="Search Icon">
+              </li>
+              <li>
+                <img src="Assets/flag-thailand.svg" alt="Flah Thailand">
+              </li>
+              <li>
+                <span>เข้าสู่ระบบ</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- navbar secondary -->
+    <div class="secondary_navbar">
+      <ul>
+        <li>บัญชี</li>
+        <li>บัตร</li>
+        <li>สินเชื่อ</li>
+        <li>ลงทุน</li>
+        <li>ประกัน</li>
+        <li>ดิจิทัลแบงก์กิ้ง</li>
+        <li>โอนเงิน / ชำระเงิน</li>
+        <li>บริการ</li>
+      </ul>
+      <ul>
+        <li>โปรโมชัน</li>
+        <li>บทความ</li>
+      </ul>
+    </div>
+  </div>
+  <!-- End banner section -->
+
+  <!-- Start finbuddy section -->
+  <!-- sticky section -->
+  <div class="sticky_section">
+    <div class="background_sticky">
+      <div class="text_content">
+        <ul>
+          <li class="active"><a href="#productHighlight">จุดเด่น</a></li>
+          <li><a href="#mainFeature">ฟีเจอร์หลัก</a></li>
+          <li><a href="#package">แนะนำแพ็คเกจ</a></li>
+          <li><a href="#howTo">วิธีการใช้งาน</a></li>
+          <li><a href="#faq">คำถามที่พบบ่อย</a></li>
+        </ul>
+      </div>
+      <button class="download_btn">ดาวน์โหลด FinBuddy</button>
+    </div>
+  </div>
+  <div class="container">
+
+    <!-- finBuddy section -->
+    <div class="fin_buddy_section" id="productHighlight">
+      <h2>FinBuddy</h2>
+      <p class="sub_title">Your Friendly Financial Companion</p>
+      <p class="description">เพื่อนรู้ใจทางการเงิน ที่เข้าใจชีวิตและช่วยให้คุณบรรลุเป้าหมายทางการเงินแบบไม่ซับซ้อน</p>
+      <div class="wrapper_card">
+        <div class="card">
+          <p>“เพื่อนรู้ใจ” ช่วยจัดการเงิน<br/>ไม่ใช่แค่แอปจดรายจ่าย<br/>แต่เป็นเพื่อนคู่คิดทางการเงิน</p>
+          <img src="Assets/image_card1.png" alt="Image Card 1">
+        </div>
+        <div class="card">
+          <p>ตั้งเป้าหมายได้ชัดเจน พร้อมระบบช่วยให้ไปถึง<br/>เป้าหมายทางการเงิน และให้ FinBuddy คอยช่วยติดตาม</p>
+          <img src="Assets/image_card2.png" alt="Image Card 2">
+        </div>
+        <div class="card">
+          <p>ติดตามรายรับรายจ่ายอย่างฉลาด ด้วย AI<br/>ง่าย รวดเร็ว และฉลาด ไม่ต้องมานั่งแบ่งหมวดเองทุกครั้ง</p>
+          <img src="Assets/image_card3.png" alt="Image Card 3">
+        </div>
+        <div class="card">
+          <p>สนุกกับการวางแผน ด้วยระบบรางวัล & การเติบโต<br/>ด้วย Gamification ให้การเงินเป็นเรื่องสนุก</p>
+          <img src="Assets/image_card4.png" alt="Image Card 4">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End finbuddy section -->
+
+  <!-- Start Card swiper -->
+  <div class="wrapper_card_swiper_section" id="mainFeature">
+    <div class="container goal_content_swiper">
+      <h3>ให้ FinBuddy ช่วยคุณให้ไปถึงเป้าหมาย</h3>
+      <h4>จัดการเงินง่าย ๆ ไปกับเพื่อนที่คุณไว้ใจ ไม่ต้องเก่งการเงิน ก็วางแผนได้ กับ FinBuddy</h4>
+      <div class="goal_content_swiper_card_section slider-container card-slider">
+        <!-- card 1 -->
+        <div class="card_swiper slide-item">
+          <img src="Assets/goal_card_image1.png" alt="Goal Card Image">
+          <div class="wrapper_text">
+            <p class="header">Smart Expense Tracker</p>
+            <p class="description">บันทึกรายจ่ายง่ายในไม่กี่วินาที<br/>พร้อมจัดหมวดอัตโนมัติด้วย AI</p>
+            <span>New Feature</span>
+            <a href="#">อ่านเพิ่มเติม</a>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card_swiper slide-item">
+          <img src="Assets/goal_card_image2.png" alt="Goal Card Image">
+          <div class="wrapper_text">
+            <p class="header">Goal-Based Saving</p>
+            <p class="description">สร้างเป้าหมายการเงิน เช่น ท่องเที่ยว แต่งงาน หรือฉุกเฉิน พร้อมระบบติดตาม</p>
+            <a href="#">อ่านเพิ่มเติม</a>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card_swiper slide-item">
+          <img src="Assets/goal_card_image3.png" alt="Goal Card Image">
+          <div class="wrapper_text">
+            <p class="header">Personal Finance Dashboard</p>
+            <p class="description">ดูภาพรวมรายรับ รายจ่าย ยอดคงเหลือ และเป้าหมายในหน้าจอเดียว</p>
+            <span>New Feature</span>
+            <a href="#">อ่านเพิ่มเติม</a>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="card_swiper slide-item">
+          <img src="Assets/goal_card_image4.png" alt="Goal Card Image">
+          <div class="wrapper_text">
+            <p class="header">FinBuddy Chat Assistant</p>
+            <p class="description">ผู้ช่วยอัจฉริยะที่ตอบคำถามการเงิน<br/>แบบเรียลไทม์</p>
+            <a href="#">อ่านเพิ่มเติม</a>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div class="card_swiper slide-item">
+          <img src="Assets/goal_card_image5.png" alt="Goal Card Image">
+          <div class="wrapper_text">
+            <p class="header">Smart Reminders & Nudges</p>
+            <p class="description">แจ้งเตือนแบบเพื่อน เตือนใช้เงิน เตือนออม โดยไม่ทำให้รู้สึกผิด</p>
+            <a href="#">อ่านเพิ่มเติม</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Card swiper -->
+  
+  <!-- Start Table section -->
+  <div class="wrapper_table_section" id="package">
+    <div class="container">
+      <h4>แพ็คเกจไหนที่เหมาะกับคุณ</h4>
+      <div class="pricing-container">
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th>ฟีเจอร์ / แพ็คเกจ</th>
+              <th>Free (ฟรี)</th>
+              <th>Plus (พรีเมียมเริ่มต้น)</th>
+              <th>Pro (ครบครันสำหรับมืออาชีพ)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature-name">ราคา (ต่อเดือน)</td>
+              <td class="price-cell free-price">ฟรี</td>
+              <td class="price-cell plus-price">149 บาท/เดือน</td>
+              <td class="price-cell pro-price">299 บาท/เดือน</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Smart Expense Tracker</td>
+              <td class="available">ใช้ได้เต็มที่</td>
+              <td class="available">ใช้ได้เต็มที่</td>
+              <td class="available">ใช้ได้เต็มที่</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Goal-Based Saving</td>
+              <td class="not-available">-</td>
+              <td class="limited">ไม่จำกัดจำนวนเป้าหมาย</td>
+              <td class="premium">ไม่จำกัด + วิเคราะห์เชิงลึก</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Personal Finance Dashboard</td>
+              <td class="limited">ฟีเจอร์พื้นฐาน</td>
+              <td class="limited">ฟีเจอร์เต็มรูปแบบ</td>
+              <td class="premium">ฟีเจอร์เต็มรูปแบบ +<br>รายงานเชิงลึกรายเดือน</td>
+            </tr>
+            <tr>
+              <td class="feature-name">FinBuddy Chat Assistant</td>
+              <td class="not-available">-</td>
+              <td class="limited">ใช้ได้ไม่จำกัด</td>
+              <td class="premium">ใช้ได้ไม่จำกัด +<br>การตอบแบบแจ้งเตือน</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Smart Reminders & Nudges</td>
+              <td class="not-available">-</td>
+              <td class="limited">แจ้งเตือนและปรับแต่งได้</td>
+              <td class="premium">แจ้งเตือนและปรับแต่งได้ +<br>วิเคราะห์พฤติกรรมพร้อมแจ้งเตือน<br>อัตโนมัติ</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!-- End Table section -->
+
+  <!-- Start how to -->
+  <div class="container" id="howTo">
+    <div class="section-header">
+        <h2 class="section-title">อย่าใช้ชีวิตจน</h2>
+        
+        <div class="toggle-container">
+            <div class="toggle-buttons">
+                <button class="toggle-btn active" data-content="signup">สมัครใช้งาน</button>
+                <button class="toggle-btn" data-content="goals">ตั้งเป้าหมายการเงิน</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content-wrapper">
+        <!-- Content 1: สมัครใช้งาน -->
+        <div class="content-section active" id="signup-content">
+            <div class="slider-container signup-slider">
+                <div class="slide-item">
+                    <div class="slide-card">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=200&fit=crop" alt="Step 1" class="slide-image">
+                        <div class="slide-content">
+                            <div class="slide-step">1</div>
+                            <div class="slide-subtitle">ขั้นตอนที่ 1/5</div>
+                            <div class="slide-title">กรอกเบอร์โทรศัพท์ หรืออีเมล</div>
+                            <div class="slide-description">เพื่อสร้างบัญชีผู้ใช้ของคุณอย่างปลอดภัย</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide-item">
+                    <div class="slide-card">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=200&fit=crop" alt="Step 2" class="slide-image">
+                        <div class="slide-content">
+                            <div class="slide-step">2</div>
+                            <div class="slide-subtitle">ขั้นตอนที่ 2/5</div>
+                            <div class="slide-title">ตั้งรหัสผ่าน / ยืนยัน OTP</div>
+                            <div class="slide-description">ยืนยันตัวตนสำคัญ ๆ ภายในไม่กี่วินาที</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide-item">
+                    <div class="slide-card">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop" alt="Step 3" class="slide-image">
+                        <div class="slide-content">
+                            <div class="slide-step">3</div>
+                            <div class="slide-subtitle">ขั้นตอนที่ 3/5</div>
+                            <div class="slide-title">เลือกเป้าหมายการเงินเบื้องต้น</div>
+                            <div class="slide-description">ตั้ง เป้า กฎเก้นเงิน/เงิน / ร้ายหาดี้ / เคยยืนไร</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide-item">
+                    <div class="slide-card">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop" alt="Step 4" class="slide-image">
+                        <div class="slide-content">
+                            <div class="slide-step">4</div>
+                            <div class="slide-subtitle">ขั้นตอนที่ 4/5</div>
+                            <div class="slide-title">กรอกข้อมูลพื้นฐาน (ไม่บังคับ)</div>
+                            <div class="slide-description">รายได้รรร ๆ / รายจ่ายหลัก เพื่อให้ลักษณะเฉพาะใน่ยาป์กัน</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide-item">
+                    <div class="slide-card">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=200&fit=crop" alt="Step 5" class="slide-image">
+                        <div class="slide-content">
+                            <div class="slide-step">5</div>
+                            <div class="slide-subtitle">ขั้นตอนที่ 5/5</div>
+                            <div class="slide-title">เริ่มต้นใช้งาน</div>
+                            <div class="slide-description">พร้อมใช้งานแล้ว! เริ่มจัดการการเงินของคุณได้เลย</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Content 2: ตั้งเป้าหมายการเงิน -->
+        <div class="content-section" id="goals-content">
+            <div class="slider-container goals-slider">
+                <div class="slide-item">
+                    <div class="slide-card">
+                        <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&h=200&fit=crop" alt="Goal 1" class="slide-image">
+                        <div class="slide-content">
+                            <div class="slide-step">1</div>
+                            <div class="slide-subtitle">เป้าหมายที่ 1/5</div>
+                            <div class="slide-title">กำหนดเป้าหมายออม</div>
+                            <div class="slide-description">ตั้งเป้าหมายการออมเงินที่ชัดเจน มีกำหนดเวลา</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide-item">
+                    <div class="slide-card">
+                        <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=400&h=200&fit=crop" alt="Goal 2" class="slide-image">
+                        <div class="slide-content">
+                            <div class="slide-step">2</div>
+                            <div class="slide-subtitle">เป้าหมายที่ 2/5</div>
+                            <div class="slide-title">วางแผนการลงทุน</div>
+                            <div class="slide-description">เลือกรูปแบบการลงทุนที่เหมาะสมกับความเสี่ยง</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide-item">
+                    <div class="slide-card">
+                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=200&fit=crop" alt="Goal 3" class="slide-image">
+                        <div class="slide-content">
+                            <div class="slide-step">3</div>
+                            <div class="slide-subtitle">เป้าหมายที่ 3/5</div>
+                            <div class="slide-title">ควบคุมรายจ่าย</div>
+                            <div class="slide-description">ตั้งงบประมาณและติดตามค่าใช้จ่ายประจำวัน</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide-item">
+                    <div class="slide-card">
+                        <img src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?w=400&h=200&fit=crop" alt="Goal 4" class="slide-image">
+                        <div class="slide-content">
+                            <div class="slide-step">4</div>
+                            <div class="slide-subtitle">เป้าหมายที่ 4/5</div>
+                            <div class="slide-title">สร้างกองทุนฉุกเฉิน</div>
+                            <div class="slide-description">เตรียมเงินสำรองไว้สำหรับเหตุการณ์ไม่คาดฝัน</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slide-item">
+                    <div class="slide-card">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=200&fit=crop" alt="Goal 5" class="slide-image">
+                        <div class="slide-content">
+                            <div class="slide-step">5</div>
+                            <div class="slide-subtitle">เป้าหมายที่ 5/5</div>
+                            <div class="slide-title">วางแผนการเกษียณ</div>
+                            <div class="slide-description">เตรียมความพร้อมทางการเงินสำหรับอนาคต</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- End how to -->
+
+  <!-- Start accordion section -->
+  <div class="accordion-container" id="faq">
+    <div class="accordion" id="finbuddyAccordion">
+        <!-- Question 1 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                    FinBuddy คืออะไรครับ?
+                    <span class="toggle-icon">+</span>
+                </button>
+            </h2>
+            <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#finbuddyAccordion">
+                <div class="accordion-body">
+                    FinBuddy คือแอปพลิเคชันแผนการเงินแบบอันเนอร์มีเจอร์ ไว้ใช้งาน ย้ายไฟล์ของเราราชัน คือไปใช้งานการออม
+                    และศิลปากรรมกฎการการเงินไว้แบบไม่ใช่เครื่อง
+                </div>
+            </div>
+        </div>
+        
+        <!-- Question 2 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                    ใช้ FinBuddy ต้องเสียเงินไหม?
+                    <span class="toggle-icon">+</span>
+                </button>
+            </h2>
+            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#finbuddyAccordion">
+                <div class="accordion-body">
+                    สามารถใช้งานเวอร์ชันพื้นฐานได้ฟรี หากต้องการฟีเจอร์เพิ่มเติม เช่น ติด เป็นอีกหนากกาเมล่าเป็นฟรอม การอื่นๆ และฟีเจอร์แบบลึก
+                    กิจกรรมการดิษเงินเป็นแพ็คแนต Plus หรือ Pro ได้
+                </div>
+            </div>
+        </div>
+        
+        <!-- Question 3 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                    ข้อมูลส่วนตัวของฉันปลอดภัยแค่ไหน?
+                    <span class="toggle-icon">+</span>
+                </button>
+            </h2>
+            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#finbuddyAccordion">
+                <div class="accordion-body">
+                    FinBuddy ให้ความสำคัญกับความเป็นส่วนตัวของผู้ใช้ ข้อมูลของคุณถูกเก็บรักษาไว้ในแนวทางที่ปลอดภัยตามมาตรฐานการ
+                </div>
+            </div>
+        </div>
+        
+        <!-- Question 4 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                    FinBuddy เหมาะกับใคร?
+                    <span class="toggle-icon">+</span>
+                </button>
+            </h2>
+            <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#finbuddyAccordion">
+                <div class="accordion-body">
+                    เหมาะกับทุกคนที่อยากจัดการการเงินส่วนตัว ไม่ว่าจะเป็นนักเรียน หน้าจาปูประดา หรือแนใด
+                    หรือคนที่อยากกิจกรรมตัวต่างแนวตามเมืองเกราะกับการเงินอย่างจริงจัง
+                </div>
+            </div>
+        </div>
+        
+        <!-- Question 5 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+                    สินค์ข้อมูล ต้องทำอย่างไร?
+                    <span class="toggle-icon">+</span>
+                </button>
+            </h2>
+            <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#finbuddyAccordion">
+                <div class="accordion-body">
+                    กด "สินค์ข้อมูล" ที่หน้าเลือกอื่น จากนั้นระบบจะส่งข้อมูลที่เชื่อมข้อมูลไปยังข้อมูลใครอื่นที่ของสุข
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- End accordion section -->
+
+  <!-- Start Footer -->
+  <div class="wrapper_footer">
+    <div class="container">
+      <p>เมนูเพิ่มเติม <img src="Assets/plus_icon.svg" alt="Plus icon"></p>
+      <div class="content_right">
+        <ul>
+          <li>เครือข่ายในต่างประเทศ</li>
+          <li>การคุ้มครองข้อมูลส่วนบุคคล</li>
+          <li>คำสงวนสิทธิ์</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <h5 class="text_footer">บริการทุกระดับประทับใจ</h5>
+  <!-- End Footer -->
+  
+  <!-- lip link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Script -->
+  <script src="main.js"></script>
+</body>
+</html>
