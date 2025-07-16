@@ -5,11 +5,14 @@ $(document).ready(function () {
       dots: true,
       infinite: false,
       speed: 300,
-      slidesToShow: 3,
+      slidesToShow: 4,
       slidesToScroll: 1,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 4000,
       arrows: false,
+      customPaging: function (slider, i) {
+        return '<button class="custom-dot"></button>';
+      },
       responsive: [
         {
           breakpoint: 1024,
@@ -32,11 +35,14 @@ $(document).ready(function () {
       dots: true,
       infinite: false,
       speed: 300,
-      slidesToShow: 3,
+      slidesToShow: 4,
       slidesToScroll: 1,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 4000,
       arrows: false,
+      customPaging: function (slider, i) {
+        return '<button class="custom-dot"></button>';
+      },
       responsive: [
         {
           breakpoint: 1024,
@@ -61,9 +67,12 @@ $(document).ready(function () {
       speed: 300,
       slidesToShow: 3,
       slidesToScroll: 1,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 4000,
       arrows: false,
+      customPaging: function (slider, i) {
+        return '<button class="custom-dot"></button>';
+      },
       responsive: [
         {
           breakpoint: 1024,
@@ -116,20 +125,18 @@ $(document).ready(function () {
     return $(this).attr("href");
   }).get();
 
-  // ✅ เมื่อคลิกที่เมนู
+  // function when click
   $menuLinks.click(function (e) {
     e.preventDefault();
     const sectionId = $(this).attr("href");
-    const sectionOffsetTop = $(sectionId).offset().top;
+    const sectionOffsetTop = $(sectionId).offset().top - 50;
 
-    // Scroll ไปยัง section แบบทันที
     $(window).scrollTop(sectionOffsetTop);
 
-    // อัปเดต active class
     updateActiveLink(sectionId);
   });
 
-  // ✅ เมื่อ scroll
+  // function when scroll
   $(window).on("scroll", function () {
     let scrollPosition = $(window).scrollTop();
 
@@ -145,7 +152,7 @@ $(document).ready(function () {
     }
   });
 
-  // ✅ ฟังก์ชันเปลี่ยน active class
+  // function change active class
   function updateActiveLink(activeId) {
     $(".sticky_section ul li").removeClass("active");
     $menuLinks.each(function () {
@@ -168,4 +175,8 @@ $(document).ready(function () {
       $stickySection.removeClass("sticky-fixed shadow");
     }
   });
+
+  // function match height
+  $(".card_swiper").matchHeight();
+  $(".wrapper_text").matchHeight();
 });
