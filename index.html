@@ -34,7 +34,7 @@
           <!-- navbar content left -->
           <div class="navbar_left">
             <img src="Assets/kbank_logo.svg" alt="KBank Logo" class="kbank_logo">
-            <ul>
+            <ul class="d-none d-md-flex">
               <li>
                 <img src="Assets/personal_icon.svg" alt="Personal Icon">
                 <span>ลูกค้าบุคคล</span>
@@ -51,8 +51,8 @@
           </div>
           <!-- navbar content right -->
           <div class="navbar_right">
-            <img src="Assets/kbank_icon.svg" alt="KBank Icon" class="kbank_icon">
-            <ul>
+            <img src="Assets/kbank_icon.svg" alt="KBank Icon" class="d-none d-md-flex kbank_icon">
+            <ul class="d-none d-md-flex">
               <li>
                 <span>นักลงทุนสัมพันธ์</span>
               </li>
@@ -69,13 +69,25 @@
                 <span>เข้าสู่ระบบ</span>
               </li>
             </ul>
+            <!-- mobile content -->
+            <ul class="d-flex d-md-none">
+              <li>
+                <img src="Assets/search-mobile.svg" alt="Search Icon" class="search-mobile">
+              </li>
+              <li>
+                <img src="Assets/mobile-icon2.svg" alt="mobile icon" class="mobile-icon">
+              </li>
+              <li>
+                <img src="Assets/hamburger.svg" alt="hamburger" class="hamburger-mobile">
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </nav>
 
     <!-- navbar secondary -->
-    <div class="secondary_navbar">
+    <div class="secondary_navbar d-none d-md-flex">
       <ul>
         <li>บัญชี</li>
         <li>บัตร</li>
@@ -168,7 +180,7 @@
   <!-- Start Card swiper -->
   <div class="wrapper_card_swiper_section" id="mainFeature">
     <div class="container goal_content_swiper">
-      <h3>ให้ FinBuddy ช่วยคุณให้ไปถึงเป้าหมาย</h3>
+      <h3>ให้ FinBuddy <br class="d-block d-md-none"/>ช่วยคุณให้ไปถึงเป้าหมาย</h3>
       <h4>จัดการเงินง่าย ๆ ไปกับเพื่อนที่คุณไว้ใจ ไม่ต้องเก่งการเงิน ก็วางแผนได้ กับ FinBuddy</h4>
       <div class="goal_content_swiper_card_section slider-container card-slider">
         <!-- card 1 -->
@@ -237,6 +249,7 @@
   <div class="wrapper_table_section" id="package">
     <div class="container">
       <h4>แพ็คเกจไหนที่เหมาะกับคุณ</h4>
+      <p class="d-flex d-md-none text-center justify-content-center align-items-center mb-3"><img src="Assets/scroll-table.svg" alt="scroll table" class="me-2">กดและเลื่อนเพื่อดูข้อมูลภายในตาราง</p>
       <div class="pricing-container">
         <table class="pricing-table">
           <thead>
@@ -485,11 +498,11 @@
 
   <!-- Start Footer -->
   <div class="wrapper_footer">
-    <div class="container">
-      <p>เมนูเพิ่มเติม <img src="Assets/plus_icon.svg" alt="Plus icon"></p>
+    <div class="container justify-content-center justify-content-md-between">
+      <p class="d-none d-md-block">เมนูเพิ่มเติม <img src="Assets/plus_icon.svg" alt="Plus icon"></p>
       <div class="content_right">
         <ul>
-          <li>เครือข่ายในต่างประเทศ</li>
+          <li class="d-none d-md-block">เครือข่ายในต่างประเทศ</li>
           <li>การคุ้มครองข้อมูลส่วนบุคคล</li>
           <li>คำสงวนสิทธิ์</li>
         </ul>

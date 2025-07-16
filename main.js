@@ -8,7 +8,6 @@ $(document).ready(function () {
       slidesToShow: 4,
       slidesToScroll: 1,
       autoplay: false,
-      autoplaySpeed: 4000,
       arrows: false,
       customPaging: function (slider, i) {
         return '<button class="custom-dot"></button>';
@@ -24,7 +23,7 @@ $(document).ready(function () {
         {
           breakpoint: 768,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 1.5,
             slidesToScroll: 1
           }
         }
@@ -38,7 +37,6 @@ $(document).ready(function () {
       slidesToShow: 4,
       slidesToScroll: 1,
       autoplay: false,
-      autoplaySpeed: 4000,
       arrows: false,
       customPaging: function (slider, i) {
         return '<button class="custom-dot"></button>';
@@ -54,7 +52,7 @@ $(document).ready(function () {
         {
           breakpoint: 768,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 1.5,
             slidesToScroll: 1
           }
         }
@@ -68,7 +66,6 @@ $(document).ready(function () {
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: false,
-      autoplaySpeed: 4000,
       arrows: false,
       customPaging: function (slider, i) {
         return '<button class="custom-dot"></button>';
@@ -179,4 +176,55 @@ $(document).ready(function () {
   // function match height
   $(".card_swiper").matchHeight();
   $(".wrapper_text").matchHeight();
+
+
+  // function navbar on mobile
+  $(document).ready(function () {
+    const $window = $(window);
+    const $navbar = $("nav");
+    const $logo = $(".kbank_logo");
+    const $searchIcon = $(".search-mobile");
+    const $mobileIcon = $(".mobile-icon");
+    const $hamburgerIcon = $(".hamburger-mobile");
+
+    const originalLogo = "Assets/kbank_logo.svg";
+    const scrolledLogo = "Assets/kbank_logo_scrolled.svg";
+    const searchOriginal = "Assets/search-mobile.svg";
+    const searchSrolled = "Assets/icon-search-scrolled.svg";
+    const mobileOriginal = "Assets/mobile-icon2.svg";
+    const mobileScrolled = "Assets/icon-mobile-2-scrolled.svg";
+    const hamburgerOriginal = "Assets/hamburger.svg";
+    const hamburgerScrolled = "Assets/hamburger-scrolled.svg"
+
+    function handleScroll() {
+      if ($window.width() <= 576) {
+        if ($window.scrollTop() > 0) {
+          $navbar.addClass("navbar-scrolled");
+          $logo.attr("src", scrolledLogo);
+          $searchIcon.attr("src", searchSrolled);
+          $mobileIcon.attr("src", mobileScrolled);
+          $hamburgerIcon.attr("src", hamburgerScrolled);
+        } else {
+          $navbar.removeClass("navbar-scrolled");
+          $logo.attr("src", originalLogo);
+          $searchIcon.attr("src", searchOriginal);
+          $mobileIcon.attr("src", mobileOriginal);
+          $hamburgerIcon.attr("src", hamburgerOriginal);
+        }
+      } else {
+        $navbar.removeClass("navbar-scrolled");
+        $logo.attr("src", originalLogo);
+        $searchIcon.attr("src", searchOriginal);
+        $mobileIcon.attr("src", mobileOriginal);
+        $hamburgerIcon.attr("src", hamburgerOriginal);
+      }
+    }
+
+    $window.on("scroll", handleScroll);
+
+    $window.on("resize", handleScroll);
+
+    handleScroll();
+  });
+
 });

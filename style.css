@@ -186,6 +186,20 @@ nav .container {
 .secondary_navbar ul:first-of-type li:last-of-type {
   padding-right: 48px;
 }
+@media screen and (max-width: 576px) {
+  nav {
+    background: none;
+  }
+  nav.navbar-scrolled {
+    background-color: #fff; /* หรือสีพื้นหลังที่ต้องการ */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
 /* End Navbar */
 
 /* Start finbuddy sticky section  */
@@ -315,6 +329,40 @@ nav .container {
   width: 156px;
   height: auto;
 }
+@media screen and (max-width: 576px) {
+  .sticky_section {
+    display: none;
+  }
+  .fin_buddy_section {
+    padding: 48px 0;
+  }
+  .fin_buddy_section h2 {
+    font-size: 28px;
+  }
+  .fin_buddy_section p.sub_title {
+    font-size: 18px;
+  }
+  .fin_buddy_section p.description {
+    font-size: 18px;
+    margin-bottom: 65px !important;
+  }
+  .fin_buddy_section .wrapper_card {
+    gap: 60px 24px;
+  }
+  .card p {
+    font-size: 16px;
+    word-break: break-word;
+    white-space: break-spaces;
+  }
+  .wrapper_card .card {
+    padding-top: 50px;
+  }
+  .wrapper_card .card img {
+    top: -37%;
+    right: 50%;
+    transform: translate(50%, 50%);
+  }
+}
 /* End finbuddy sticky section */
 
 /* Start goal section */
@@ -412,6 +460,22 @@ nav .container {
 .wrapper_text a:hover {
   color: #017939;
 }
+@media screen and (max-width: 576px) {
+  .goal_content_swiper_card_section {
+    width: 100%;
+    margin: 0 auto !important;
+  }
+  .goal_content_swiper h3 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+  .goal_content_swiper h4 {
+    font-size: 18px;
+  }
+  .card_swiper {
+    max-width: 300px !important;
+  }
+}
 /* End goal section */
 
 /* Start table */
@@ -504,16 +568,53 @@ nav .container {
 
 @media (max-width: 768px) {
   .pricing-table {
-      font-size: 12px;
+    font-size: 12px;
   }
   
   .pricing-table th,
   .pricing-table td {
-      padding: 12px 8px;
+    padding: 12px 8px;
   }
   
   .price-cell {
-      font-size: 14px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .wrapper_table_section {
+    padding: 48px 0;
+  }
+  .wrapper_table_section h4 {
+    font-size: 28px;
+  }
+  .pricing-container {
+    overflow-x: auto;
+  }
+
+  .pricing-table {
+    min-width: 800px;
+  }
+  .pricing-table th,
+  .pricing-table td {
+    min-width: 180px;
+    white-space: nowrap;
+  }
+  ::-webkit-scrollbar {
+    height: 3px;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.16);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary); 
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary); 
   }
 }
 /* End table */
@@ -521,7 +622,7 @@ nav .container {
 /* Start how to */
 .wrapper_howto_section {
   background: #F0FAF7;
-  padding: 64px;
+  padding: 64px 0;
 }
 .section-header {
   text-align: center;
@@ -562,7 +663,7 @@ nav .container {
 }
 
 .toggle-btn.active {
-  background: #10b981;
+  background: #00A94F;
   color: #ffffff;
   border: none;
 }
@@ -632,7 +733,7 @@ nav .container {
 }
 
 .slick-dots li.slick-active button:before {
-  color: #10b981;
+  color: #00A94F;
 }
 
 .slick-prev,
@@ -661,7 +762,8 @@ nav .container {
 
 @media (max-width: 768px) {
   .section-title {
-      font-size: 24px;
+    font-size: 24px;
+    margin-bottom: 24px;
   }
   
   .toggle-btn {
@@ -680,6 +782,11 @@ nav .container {
   
   .slick-next {
       right: -10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .wrapper_howto_section {
+    padding: 48px 0;
   }
 }
 /* End how to */
@@ -770,6 +877,11 @@ nav .container {
   .accordion-body {
       padding: 0 20px 20px 20px;
       font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px){
+  .wrapper_faq_section {
+    padding: 48px 0;
   }
 }
 /* End accordion */
