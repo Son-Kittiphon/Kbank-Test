@@ -227,4 +227,77 @@ $(document).ready(function () {
     handleScroll();
   });
 
+  // function bottom bar
+  $(document).ready(function () {
+    // ปิด popup ทุกตัวก่อน
+    function closePopups() {
+      $(".popup").removeClass("active");
+    }
+
+    // เปิด popup menu
+    $(".btn-menu").on("click", function () {
+      closePopups();
+      $(".popup-menu").addClass("active");
+    });
+
+    // เปิด popup LINE
+    $(".btn-line").on("click", function () {
+      closePopups();
+      $(".popup-line").addClass("active");
+    });
+
+    // ปุ่มปิด popup
+    $(".popup-close").on("click", function () {
+      closePopups();
+    });
+  });
+
+  let isMenuOpen = false;
+
+  $('#closeBtn').click(function () {
+    if (!isMenuOpen) {
+      // เปิดเมนู
+      $('#popupMenu').addClass('show');
+      $('#overlay').addClass('show');
+      isMenuOpen = true;
+    } else {
+      // ปิดเมนู
+      $('#popupMenu').removeClass('show');
+      $('#overlay').removeClass('show');
+      isMenuOpen = false;
+    }
+  });
+
+  // ปิดเมนูเมื่อกดที่ overlay
+  $('#overlay').click(function () {
+    $('#popupMenu').removeClass('show');
+    $('#overlay').removeClass('show');
+    isMenuOpen = false;
+  });
+
+  // จัดการเมื่อกดที่ notification item
+  $('.notification-item').click(function () {
+    const action = $(this).data('action');
+
+    // ปิดเมนูก่อน
+    $('#popupMenu').removeClass('show');
+    $('#overlay').removeClass('show');
+    isMenuOpen = false;
+
+    // เพิ่ม effect เมื่อกด
+    $(this).css('transform', 'scale(0.95)');
+    setTimeout(() => {
+      $(this).css('transform', '');
+    }, 150);
+
+    // จัดการ action ตาม data-action
+    if (action === 'line') {
+      alert('เปิด LINE Chat');
+      // window.open('https://line.me/...', '_blank');
+    } else if (action === 'phone') {
+      alert('เริ่มการโทร');
+      // window.location.href = 'tel:+66xxxxxxxxx';
+    }
+  });
+
 });
