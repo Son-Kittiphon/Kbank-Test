@@ -95,6 +95,15 @@ a {
   background: var(--primary);
   width: 30px;
 }
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 90% !important;
+  }
+  .modal-dialog {
+    max-width: 80% !important;
+  }
+}
 /* End custom lib */
 
 /* Start Global */
@@ -186,7 +195,30 @@ nav .container {
 .secondary_navbar ul:first-of-type li:last-of-type {
   padding-right: 48px;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1200px) {
+  .secondary_navbar ul {
+    gap: 24px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .navbar_left img.kbank_logo {
+    margin-right: 18px;
+  }
+  .wrapper_navbar ul {
+    gap: 12px;
+  }
+  .secondary_navbar {
+    /* gap: 24px; */
+    padding: 13px 20px;
+  }
+  .secondary_navbar ul {
+    gap: 12px;
+  }
+  .secondary_navbar ul:first-of-type li:last-of-type {
+    padding-right: 12px;
+  }
+}
+@media screen and (max-width: 767px) {
   nav {
     background: none;
   }
@@ -329,7 +361,12 @@ nav .container {
   width: 156px;
   height: auto;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1200px) {
+  .background_sticky {
+    max-width: 90%;
+  }
+}
+@media screen and (max-width: 767px) {
   .sticky_section {
     display: none;
   }
@@ -358,9 +395,14 @@ nav .container {
     padding-top: 50px;
   }
   .wrapper_card .card img {
-    top: -37%;
+    top: -60%;
     right: 50%;
     transform: translate(50%, 50%);
+  }
+}
+@media screen and (max-width: 576px) {
+  .wrapper_card .card img {
+    top: -37%;
   }
 }
 /* End finbuddy sticky section */
@@ -460,7 +502,7 @@ nav .container {
 .wrapper_text a:hover {
   color: #017939;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
   .goal_content_swiper_card_section {
     width: 100%;
     margin: 0 auto !important;
@@ -580,7 +622,7 @@ nav .container {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
   .wrapper_table_section {
     padding: 48px 0;
   }
@@ -784,7 +826,7 @@ nav .container {
       right: -10px;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
   .wrapper_howto_section {
     padding: 48px 0;
   }
@@ -879,7 +921,7 @@ nav .container {
       font-size: 14px;
   }
 }
-@media screen and (max-width: 576px){
+@media screen and (max-width: 767px){
   .wrapper_faq_section {
     padding: 48px 0;
   }
@@ -982,7 +1024,7 @@ h5.text_footer {
   text-align: center;
   padding: 16px 0;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
   h5.text_footer {
     margin-bottom: 55px;
   }
