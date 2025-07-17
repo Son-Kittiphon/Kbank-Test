@@ -495,23 +495,6 @@
       </div>
     </div>
     <!-- End accordion section -->
-    <div class="chat-bubble-container">
-    <div class="chat-bubble">
-        แชทกับเจ้าหน้าที่ผ่าน LINE
-    </div>
-    <div class="line-button">
-        LINE
-    </div>
-</div>
-
-<div class="chat-bubble-container">
-    <div class="chat-bubble">
-        โทรสอบถามเจ้าหน้าที่
-    </div>
-    <div class="phone-button">
-        📞
-    </div>
-</div>
     <!-- Start Footer -->
     <div class="wrapper_footer">
       <div class="container justify-content-center justify-content-md-between">
@@ -527,88 +510,60 @@
     </div>
     <h5 class="text_footer">บริการทุกระดับประทับใจ</h5>
     <!-- End Footer -->
-
-    <!-- <div class="d-block d-md-none sticky-footer-mobile">
-      <p>test</p>
-    </div> -->
     
     <!-- Bottom Fixed Bar -->
-    <div class="bottom-bar d-block d-md-none ">
-      <button class="btn-menu">
-        <img src="Assets/hamburger.svg" alt="menu">
+    <div class="overlay" id="overlay"></div>
+    <div class="bottom-bar d-flex d-md-none ">
+      <!-- Menu Popup -->
+      <div class="popup-list-menu" id="popupListMenu">
+        <div class="menu-bubble-container">
+          <button id="closeInPopup">
+            <img src="Assets/close-icon-green.svg" alt="close icon">
+          </button>
+          <p>กรุณาเลือกหัวข้อ</p>
+          <ul>
+            <li class="active"><img src="Assets/star-green.svg" alt="star icon">จุดเด่น</li>
+            <li><img src="Assets/feature-icon.svg" alt="feature icon">ฟีเจอร์หลัก</li>
+            <li><img src="Assets/recommend-package.svg" alt="recommend package">แนะนำแพ็คเกจ</li>
+            <li><img src="Assets/how-to-icon.svg" alt="how to icon">วิธีการใช้งาน</li>
+            <li><img src="Assets/faq-icon.svg" alt="faq icon">คำถามที่พบบ่อย</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Line Popup -->
+      <div class="popup-menu" id="popupMenu">
+        <div class="chat-bubble-container">
+          <div class="chat-bubble">
+            แชทกับเจ้าหน้าที่ผ่าน LINE
+          </div>
+          <div class="chat-bubble">
+            โทรสอบถามเจ้าหน้าที่
+          </div>
+        </div>
+
+        <div class="chat-bubble-container">
+          
+          <div class="line-button">
+            <img src="Assets/line-icon.svg" alt="line icon">
+          </div>
+          <div class="phone-button">
+            <img src="Assets/phone-icon.svg" alt="phone-icon">
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-menu" id="listMenuBtn">
+        <img src="Assets/hamburger-icon-popup.svg" alt="menu">
       </button>
 
       <button class="btn-download">
         ดาวน์โหลด FinBuddy
       </button>
 
-      <button class="btn-line">
-        <img src="Assets/line-icon.svg" alt="line">
+      <button class="btn-line" id="lineBtn">
+        <img src="Assets/line-icon.svg" alt="line" id="lineIcon" style="display: inline-block;">
+        <img src="Assets/close-popup-icon.svg" alt="close icon" id="closeIcon" style="display: none;">
       </button>
-    </div>
-
-    <!-- Slide-up: เมนูหัวข้อ -->
-    <div class="popup popup-menu">
-      <div class="popup-inner">
-        <div class="popup-header">
-          <span>กรุณาเลือกหัวข้อ</span>
-          <button class="popup-close">✕</button>
-        </div>
-        <ul class="popup-list">
-          <li>จุดเด่น</li>
-          <li>ฟีเจอร์หลัก</li>
-          <li>แนะนำแพ็คเกจ</li>
-          <li>วิธีการใช้งาน</li>
-          <li>คำถามที่พบบ่อย</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Slide-up: LINE Action -->
-    <div class="popup popup-line">
-      <div class="popup-inner">
-        <button class="popup-close">✕</button>
-        <div class="line-actions">
-          <div>แชทกับเจ้าหน้าที่ผ่าน LINE</div>
-          <div>โทรสอบถามเจ้าหน้าที่</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="overlay" id="overlay"></div>
-    
-    <div class="overlay" id="overlay"></div>
-    
-    <div class="main-container">
-        <div class="popup-menu" id="popupMenu">
-            <div class="notification-item" data-action="line">
-                <div class="notification-text">แชทกับเจ้าหน้าที่ผ่าน LINE</div>
-                <div class="notification-icon">
-                    LINE
-                </div>
-                <div class="ripple"></div>
-            </div>
-            
-            <div class="notification-item" data-action="phone">
-                <div class="notification-text">โทรสอบถามเจ้าหน้าที่</div>
-                <div class="notification-icon phone-icon">
-                    📞
-                </div>
-                <div class="ripple"></div>
-            </div>
-        </div>
-        
-        <div class="main-bar">
-            <button class="menu-btn">
-                <span></span>
-            </button>
-            
-            <div class="main-content">
-                ดาวน์โหลด FinBuddy
-            </div>
-            
-            <button class="close-btn" id="closeBtn"></button>
-        </div>
     </div>
   </div>
   
