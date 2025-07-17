@@ -117,7 +117,7 @@ $(document).ready(function () {
   });
 
   // function scroll to section
-  const $menuLinks = $(".sticky_section ul li a");
+  const $menuLinks = $(".move_to_section ul li a");
   const sectionIds = $menuLinks.map(function () {
     return $(this).attr("href");
   }).get();
@@ -127,7 +127,9 @@ $(document).ready(function () {
     e.preventDefault();
     const sectionId = $(this).attr("href");
     const sectionOffsetTop = $(sectionId).offset().top - 50;
-
+    $('#overlay').removeClass('show');
+    $('#popupListMenu').removeClass('show');
+    isListMenuOpen = false;
     $(window).scrollTop(sectionOffsetTop);
 
     updateActiveLink(sectionId);
@@ -151,7 +153,7 @@ $(document).ready(function () {
 
   // function change active class
   function updateActiveLink(activeId) {
-    $(".sticky_section ul li").removeClass("active");
+    $(".move_to_section ul li").removeClass("active");
     $menuLinks.each(function () {
       if ($(this).attr("href") === activeId) {
         $(this).parent().addClass("active");
